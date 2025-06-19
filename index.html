@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thanachat Malasaeng</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="antialiased">
+
+    <div id="particles-js"></div>
+
+
+    <div class="content-wrapper">
+        <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white cursor-pointer">Thanachat M.</a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="text-gray-300 hover:text-white transition cursor-pointer">เกี่ยวกับผม</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white transition cursor-pointer">ความสามารถ</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-white transition cursor-pointer">ผลงาน</a>
+                    <a href="#certificates" class="text-gray-300 hover:text-white transition cursor-pointer">เกียรติบัตร</a>
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition cursor-pointer">ติดต่อ</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none cursor-pointer">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+            <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white cursor-pointer">เกี่ยวกับผม</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-white cursor-pointer">ความสามารถ</a>
+                <a href="#portfolio" class="block py-2 text-gray-300 hover:text-white cursor-pointer">ผลงาน</a>
+                <a href="#certificates" class="block py-2 text-gray-300 hover:text-white cursor-pointer">เกียรติบัตร</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white cursor-pointer">ติดต่อ</a>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-6 py-12">
+
+            <section id="about" class="text-center py-20 md:py-32">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                        <span class="text-gradient">นายธนะชาติ มาลาแสง</span>
+                        <span class="text-white">(ชินจัง)</span>
+                    </h1>
+                    <p id="typewriter" class="mt-4 text-lg md:text-xl text-gray-300 min-h-[56px] md:min-h-[28px]">
+                    </p>
+                    <p class="mt-2 text-md text-gray-400">
+                        วันเกิด : 27 ธันวาคม 2006
+                    </p>
+                    <a href="#portfolio" class="mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                        ดูผลงานของผม
+                    </a>
+                </div>
+            </section>
+
+            <section id="skills" class="py-16 reveal">
+                <h2 class="section-title text-3xl font-bold text-white mb-12">ความสามารถของผม</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="glassmorphism p-8 rounded-xl card-glow transition-all duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-6 flex items-center"><i class="fas fa-code mr-3 text-indigo-400"></i>Programming</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">Python</span>
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">C</span>
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">C++</span>
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">JavaScript</span>
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">Lua</span>
+                        </div>
+                    </div>
+                    <div class="glassmorphism p-8 rounded-xl card-glow transition-all duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-6 flex items-center"><i class="fas fa-palette mr-3 text-indigo-400"></i>Graphic Design</h3>
+                         <div class="flex flex-wrap gap-4">
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">Figma</span>
+                            <span class="skill-tag text-lg font-medium py-2 px-4 rounded-lg cursor-pointer">Infographic Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="py-16 reveal">
+                <h2 class="section-title text-3xl font-bold text-white mb-12">ผลงานเด่น</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glassmorphism rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 card-glow">
+                         <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-white">Figma & Graphic Design Portfolio</h3>
+                            <p class="text-gray-300 mt-2">ผลงานการออกแบบที่รวบรวมไว้ใน Portfolio ฉบับสมบูรณ์ จัดทำเพื่อยื่นสมัครเรียนต่อที่มหาวิทยาลัยเทคโนโลยีสุรนารี</p>
+                            <a href="Files/Portfolio Suranaree of Technology.pdf" download class="inline-block mt-4 bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition cursor-pointer">
+                                <i class="fas fa-download mr-2"></i>ดาวน์โหลด PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificates" class="py-16 reveal">
+                <h2 class="section-title text-3xl font-bold text-white mb-12">เกียรติบัตรและรางวัล</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="Photos/CyberHacking-1.png" target="_blank" class="block glassmorphism rounded-xl overflow-hidden group cursor-pointer card-glow transition-all duration-300">
+                        <img src="Photos/CyberHacking-1.png" alt="เกียรติบัตร Cyber Hacking" class="w-full h-48 object-contain group-hover:opacity-75 transition-opacity bg-black bg-opacity-20">
+                        <div class="p-4 text-center">
+                            <h3 class="font-semibold text-white">Cyber Hacking Competition</h3>
+                            <p class="text-sm text-gray-400">รางวัลรองชนะเลิศ อันดับ 1</p>
+                        </div>
+                    </a>
+                    <a href="Photos/GameDevelopment-2.png" target="_blank" class="block glassmorphism rounded-xl overflow-hidden group cursor-pointer card-glow transition-all duration-300">
+                        <img src="Photos/GameDevelopment-2.png" alt="เกียรติบัตร Game Development" class="w-full h-48 object-contain group-hover:opacity-75 transition-opacity bg-black bg-opacity-20">
+                        <div class="p-4 text-center">
+                            <h3 class="font-semibold text-white">Game Development</h3>
+                            <p class="text-sm text-gray-400">เหรียญทอง รองชนะเลิศอันดับ 2</p>
+                        </div>
+                    </a>
+                    <a href="Photos/ProgrammingSolvedQuestion-2.png" target="_blank" class="block glassmorphism rounded-xl overflow-hidden group cursor-pointer card-glow transition-all duration-300">
+                        <img src="Photos/ProgrammingSolvedQuestion-2.png" alt="เกียรติบัตร Programming" class="w-full h-48 object-contain group-hover:opacity-75 transition-opacity bg-black bg-opacity-20">
+                         <div class="p-4 text-center">
+                            <h3 class="font-semibold text-white">Programming Contest</h3>
+                            <p class="text-sm text-gray-400">เหรียญทอง ชนะเลิศ</p>
+                        </div>
+                    </a>
+                    <a href="Photos/ThanachatMalasaengInfographic-1.png" target="_blank" class="block glassmorphism rounded-xl overflow-hidden group cursor-pointer card-glow transition-all duration-300">
+                        <img src="Photos/ThanachatMalasaengInfographic-1.png" alt="เกียรติบัตร Infographic" class="w-full h-48 object-contain group-hover:opacity-75 transition-opacity bg-black bg-opacity-20">
+                         <div class="p-4 text-center">
+                            <h3 class="font-semibold text-white">Infographic Innovation</h3>
+                            <p class="text-sm text-gray-400">เข้าร่วมการแข่งขัน</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+             <section id="contact" class="py-16 text-center reveal">
+                 <h2 class="section-title text-3xl font-bold text-white mb-12">ติดต่อผม</h2>
+                <div class="max-w-2xl mx-auto glassmorphism p-8 rounded-xl card-glow transition-all duration-300">
+                    <p class="text-lg text-gray-300 mb-6 cursor-help">สนใจร่วมงานหรือต้องการสอบถามเพิ่มเติม</p>
+                    <div class="space-y-4 text-left">
+                        <div class="flex items-center text-lg">
+                            <i class="fas fa-envelope w-6 mr-4 text-indigo-400"></i>
+                            <a href="mailto:lemonade.businesses@gmail.com" class="hover:text-indigo-400 transition cursor-pointer">lemonade.businesses@gmail.com</a>
+                        </div>
+                        <div class="flex items-center text-lg">
+                            <i class="fas fa-phone w-6 mr-4 text-indigo-400"></i>
+                            <a href="tel:0650715091" class="hover:text-indigo-400 transition cursor-pointer">(+66) 65-071-5091</a>
+                        </div>
+                        <div class="flex items-center text-lg">
+                             <i class="fab fa-facebook w-6 mr-4 text-indigo-400"></i>
+                            <a href="https://www.facebook.com/LemonadeX20" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition cursor-pointer">LemonadeX20</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-900 border-t border-gray-700">
+            <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+                <p>&copy; 2024 นาย ธนะชาติ มาลาแสง. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Particle.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        // --- Mobile Menu ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // --- Particle.js Initialization ---
+        particlesJS('particles-js', {
+            "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#4f46e5" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, }, "opacity": { "value": 0.4, "random": true, "anim": { "enable": false, } }, "size": { "value": 3, "random": true, "anim": { "enable": false, } }, "line_linked": { "enable": true, "distance": 150, "color": "#818cf8", "opacity": 0.2, "width": 1 }, "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": false, "mode": "push" }, "resize": true }, "modes": { "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 4 }, } }, "retina_detect": true
+        });
+
+        // --- Scroll Reveal Animation ---
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => { revealObserver.observe(el); });
+
+        // --- Typewriter Effect ---
+        const typewriterElement = document.getElementById('typewriter');
+        const textToType = "ชอบเขียนโปรแกรมแก้ปัญหา ออกแบบกราฟิก และส่วนตัวชอบศึกษาระบบ Networking มากครับ";
+        let i = 0;
+        function typeWriter() {
+            if (i < textToType.length) {
+                typewriterElement.innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, 40); // Speed of typing
+            }
+        }
+
+        // Start typing after 500 miliseconds
+        setTimeout(typeWriter, 500);
+
+    </script>
+
+</body>
+</html>
