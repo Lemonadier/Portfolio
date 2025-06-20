@@ -191,7 +191,7 @@
             // --- Page Switching Logic ---
             function showPage(pageId) {
                 pages.forEach(page => page.classList.toggle('hidden', page.id !== pageId));
-                if (pageId === 'home') startTypewriter();
+                // if (pageId === 'home') startTypewriter();
                 window.scrollTo(0, 0);
             }
             
