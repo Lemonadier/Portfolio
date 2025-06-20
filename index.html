@@ -15,79 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* --- General Styling --- */
-        body {
-            font-family: 'Sarabun', 'Inter', sans-serif;
-            background-color: #111827;
-            color: #d1d5db;
-        }
-
-        /* --- Particle Background Styling --- */
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 0;
-        }
-
-        /* --- Content Wrapper --- */
-        .content-wrapper {
-            position: relative;
-            z-index: 1;
-            background-color: transparent;
-        }
-
-        /* --- Glassmorphism & Glow Effects --- */
-        .glassmorphism {
-            background: rgba(17, 24, 39, 0.6);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .card-glow:hover {
-            box-shadow: 0 0 15px rgba(167, 139, 250, 0.4), 0 0 30px rgba(129, 140, 248, 0.2);
-        }
-
-        /* --- Reusable Components Styling --- */
-        .section-title {
-            border-bottom: 2px solid #4f46e5;
-            padding-bottom: 8px;
-            display: inline-block;
-        }
-        .skill-tag {
-            background-color: #374151;
-            color: #f3f4f6;
-            transition: all 0.2s ease;
-        }
-        .skill-tag:hover {
-            background-color: #4f46e5;
-            transform: translateY(-2px);
-        }
-        .text-gradient {
-            background: linear-gradient(to right, #818cf8, #a78bfa);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Page container to manage transitions */
-        .page {
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body class="antialiased">
@@ -196,7 +124,7 @@
                         <a href="#" data-page="portfolio" class="nav-link mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 mr-5 rounded-lg shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300 cursor-pointer">
                             ดูผลงานของผม
                         </a>
-                        <a href="#" data-page="portfolio" class="nav-link mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                        <a href="#" data-page="certificates" class="nav-link mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300 cursor-pointer">
                             ดูรางวัลของผม
                         </a>
                     </div>`;
