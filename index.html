@@ -167,14 +167,18 @@
                 // Footer
                 document.getElementById('footer-text').innerHTML = `&copy; ${new Date().getFullYear()} ${personalInfo.name}. All Rights Reserved.`;
             }
+
+            let used = false;
             
             // --- Typewriter Effect ---
             function startTypewriter() {
+                if (used === true) return;
                 const typewriterElement = document.getElementById('typewriter');
                 if (!typewriterElement) return;
                 const textToType = portfolioData.personalInfo.tagline;
                 let i = 0;
                 typewriterElement.innerHTML = ''; // Clear before typing
+                used = true;
                 function typeWriter() {
                     if (i < textToType.length) {
                         typewriterElement.innerHTML += textToType.charAt(i);
@@ -191,7 +195,7 @@
             // --- Page Switching Logic ---
             function showPage(pageId) {
                 pages.forEach(page => page.classList.toggle('hidden', page.id !== pageId));
-                // if (pageId === 'home') startTypewriter();
+                if (pageId === 'home') startTypewriter();
                 window.scrollTo(0, 0);
             }
             
