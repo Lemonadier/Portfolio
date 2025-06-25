@@ -28,6 +28,16 @@
       "title": "Figma & Graphic Design Portfolio",
       "description": "ผลงานการออกแบบที่รวบรวมไว้ใน Portfolio ฉบับสมบูรณ์ จัดทำเพื่อยื่นสมัครเรียนต่อที่มหาวิทยาลัยเทคโนโลยีสุรนารี",
       "file": "Files/Portfolio Suranaree of Technology.pdf"
+    },
+    {
+      "title": "Teacher Room for anounce events Template",
+      "description": "เป็นเว็บแจ้งข่าวสารสำหรับห้องเรียนของครู 1 คน เพื่อให้ผู้ปกครองสามารถเข้าไปดูได้ทันที",
+      "link" : "https://lemonadier.github.io/TheRoom/"
+    },
+    {
+      "title": "TownHome Preview",
+      "description": "ผลงานที่ทำมาเพื่อแสดงรูปภาพภายใน และภายนอกทาวน์เฮาส์",
+      "link" : "https://lemonadier.github.io/TownHome/"
     }
   ],
   "certificates": [
